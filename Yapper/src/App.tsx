@@ -11,17 +11,9 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import tweetsData from "./data/tweets.json";
+import type { Tweet } from "./types/Tweet";
 
-interface Tweet {
-  id: number;
-  name: string;
-  username: string;
-  createdAt: string;
-  text: string;
-  likes: number;
-  replies: number;
-  tag: string;
-}
+
 
 function timeAgo(createdAt: string): string {
   const now = new Date();
