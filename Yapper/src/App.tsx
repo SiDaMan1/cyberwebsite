@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Badge,
   Box,
@@ -10,7 +10,6 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import tweetsData from "./data/tweets.json";
 import type { Tweet } from "./types/Tweet";
 import { supabase } from "./utils/supabase";
 
